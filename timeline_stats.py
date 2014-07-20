@@ -13,7 +13,7 @@ total_tweets = sum(count for count in name_count.itervalues())
 print 'Period: %s - %s (%s)' % (first_date, last_date,
                                 last_date - first_date)
 print 'Total tweets', total_tweets
-print 'Tweetiest people (format is "@person - # tweets (% tweets)"):'
+print 'Tweetiest people (format is "@person - # tweets (% of total tweets)"):'
 for name, count in name_count.most_common(1000):
   print '\t%s - %s (%0.2f%%)' % (name, count,
                                     float(count) / total_tweets * 100)
