@@ -1,5 +1,6 @@
 import settings
 import tweepy
+from webbrowser import open_new_tab
 
 
 def authenticate():
@@ -9,6 +10,7 @@ def authenticate():
            'set, so let\'s get you some')
     redirect_url = auth.get_authorization_url()
     print 'Head to %s and authorize the app' % redirect_url
+    open_new_tab(redirect_url)
     verifier = raw_input('Enter your verification code: ').strip()
     token = auth.get_access_token(verifier=verifier)
     print ('To avoid this step in the future, go to settings.py and '
