@@ -1,0 +1,10 @@
+# Create an app at https://apps.twitter.com/app/new and store its
+# key/secret below.
+API_KEY = ''
+API_SECRET = ''
+
+# Once you run a script, it will provide you with an authorization
+# URL.  After you visit it and get an authentication key/secret, you
+# can store them below.
+AUTH_KEY = ''
+AUTH_SECRET = ''
