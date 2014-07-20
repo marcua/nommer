@@ -2,6 +2,24 @@ import tweepy
 from auth import authenticate
 from collections import Counter
 
+"""
+This script tells you who the Tweetiest/most prolific people you
+follow are.
+
+Fetch the most recent 800 (Twitter limit) tweets on your timeline.
+Count how many tweets each person emitted.  Output something like
+this:
+
+Period: 2014-07-20 19:00:06 - 2014-07-20 19:31:01 (0:30:55)
+Total tweets 8
+Tweetiest people (format is "@person - # tweets (% tweets)"):
+  person1 - 3 (37.50%)
+  person2 - 2 (25.00%)
+  person3 - 1 (12.50%)
+  person4 - 1 (12.50%)
+  person5 - 1 (12.50%)
+"""
+
 api = authenticate()
 
 timeline = list(tweepy.Cursor(api.home_timeline, count=200).items(800))
