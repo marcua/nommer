@@ -30,7 +30,8 @@ Run `python timeline_stats.py`.  The output will look something like this:
 ```
 Period: 2014-07-20 19:00:06 - 2014-07-20 19:31:01 (0:30:55)
 Total tweets 8
-Tweetiest people (format is "@person - # tweets (% tweets)"):
+
+Tweetiest people (format is "@person - # tweets (% of total tweets)"):
   person1 - 3 (37.50%)
   person2 - 2 (25.00%)
   person3 - 1 (12.50%)
